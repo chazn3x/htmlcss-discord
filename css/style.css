@@ -45,14 +45,14 @@ header {
 header .header-row {
     height: 60px;
 }
-#logo, #accedi {
+#logo-header, #accedi {
     float: left;
     width: 25%;
 }
-#logo {
+#logo-header {
     line-height: 60px;
 }
-#logo img {
+#logo-header img {
     vertical-align: middle;
     cursor: pointer;
 }
@@ -221,11 +221,12 @@ footer {
 footer a {
     color: white;
 }
-footer h3 {
+footer h3, footer h5 {
     color: rgb(113,137,218);
 }
 .footer-top {
-    padding-top: 80px;
+    padding: 80px 0 25px;
+    border-bottom: 1px solid rgb(113,137,218);
 }
 .footer-top .main-footer {
     width: 35%;
@@ -249,6 +250,43 @@ footer h3 {
 }
 .main-footer .social a {
     margin-right: 20px;
+}
+.links-footer .link-utili {
+    float: left;
+    width: 25%;
+}
+.links-footer h5 {
+    font-size: 17px;
+}
+.links-footer li {
+    list-style: none;
+    margin: 13px 0;
+}
+.links-footer a:hover {
+    text-decoration: underline;
+}
+.footer-bottom {
+    padding: 25px 0 40px;
+}
+#logo-footer {
+    float: left;
+    cursor: pointer;
+}
+#registrati {
+    text-align: right;
+}
+#registrati .registrati-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(113,137,218);
+    vertical-align: middle;
+    line-height: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+#registrati a:hover {
+    background-color: rgb(137, 159, 231);
 }
 
 
@@ -282,7 +320,7 @@ footer h3 {
     height: 100%;
     background-color: lightyellow;
 } */
-.debug footer {
+/* .debug footer {
     height: 500px;
 }
 .debug .footer-top {
@@ -290,9 +328,9 @@ footer h3 {
 }
 .debug .main-footer {
     height: 100%;
-    /* background-color: grey; */
+    background-color: grey;
 }
 .debug .links-footer {
     height: 100%;
     background-color: skyblue;
-}
+} */
