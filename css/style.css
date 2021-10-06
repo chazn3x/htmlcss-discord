@@ -1,0 +1,27 @@
+/* commons */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    height: 650px;
+}
+
+
+
+
+
+/* +++ debug +++ */
+.debug .content-container {
+    background-color: grey;
+}
+.debug header {
+    background-color: skyblue;
+}
