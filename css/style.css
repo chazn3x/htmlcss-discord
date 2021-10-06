@@ -3,25 +3,99 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .content-container {
     width: 90%;
     margin: 0 auto;
+    max-width: 1170px;
+}
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+a {
+    text-decoration: none;
 }
 
 /* header */
 header {
-    height: 650px;
+    height: 550px;
+    padding-top: 10px;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
-
+/* header top */
+header .header-top {
+    height: 60px;
+}
+#logo, #accedi {
+    float: left;
+    width: 25%;
+}
+#logo {
+    line-height: 60px;
+    text-align: center;
+}
+#logo img {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.header-menu {
+    float: left;
+    width: 50%;
+    line-height: 60px;
+    text-align: center;
+}
+.header-menu li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 15px;
+}
+.header-menu a {
+    color: white;
+}
+.header-menu a:hover {
+    text-decoration: underline;
+}
+#accedi {
+    text-align: center;
+    line-height: 60px
+}
+#accedi .accedi-btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #fff;
+    color: black;
+    vertical-align: middle;
+    line-height: 20px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+#accedi .accedi-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-duration: 0.2s;
+}
 
 
 
 
 /* +++ debug +++ */
-.debug .content-container {
+/* .debug .content-container {
     background-color: grey;
-}
-.debug header {
+} */
+/* .debug header {
     background-color: skyblue;
+} */
+/* .debug header .header-top nav {
+    background-color: red;
+    height: 100%;
 }
+.debug #logo, .debug #accedi {
+    background-color: green;
+    height: 100%;
+} */
