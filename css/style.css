@@ -27,6 +27,9 @@ p {
     font-size: 17px;
     line-height: 25px;
 }
+.left {
+    float: left;
+}
 
 
 /* header */
@@ -91,7 +94,7 @@ header .header-row {
 
 
 main {
-    padding-top: 60px;
+    padding-top: 65px;
 }
 
 /* jumbotron */
@@ -146,30 +149,76 @@ main .jumbotron {
 
 /* main content */
 
-section {
-    padding-top: 100px;
-    width: 100%;
+#prima-sezione {
+    padding-top: 50px;
 }
-.section-img, .section-text {
-    float: left;
+.section-content {
+    padding-top: 50px;
 }
-.section-img {
+section:not(#quarta-sezione) .section-img {
     width: 60%;
 }
 .section-img img {
     width: 100%;
 }
-.section-text {
+section:not(#quarta-sezione) .section-text {
     width: 40%;
     padding-top: 35px;
+}
+#prima-sezione .section-text, #terza-sezione .section-text {
     padding-left: 70px;
 }
 .section-text h2 {
     font-size: 40px;
     margin-bottom: 20px;
 }
-
-
+.onda svg {
+    display: block;
+}
+#seconda-sezione, #quarta-sezione {
+    background-color: rgb(246, 246, 246);
+}
+#seconda-sezione .section-text {
+    padding-right: 70px;
+}
+#quarta-sezione {
+    padding-bottom: 100px;
+    text-align: center;
+}
+#quarta-sezione p {
+    width: 80%;
+    margin: 0 auto;
+}
+#quarta-sezione .call-to-action .title-stars {
+    width: 60%;
+    height: 60px;
+    padding-top: 30px;
+    margin: 0 auto;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+#quarta-sezione .call-to-action .title-stars h3 {
+    font-size: 27px;
+}
+#last-download a {
+    background-color: rgb(43,94,231);
+    color: white;
+    display: inline-block;
+    padding: 12px 22px;
+    border-radius: 22px;
+    margin: 0 10px;
+    margin-top: 30px;
+}
+#last-download a:hover {
+    background-color: rgba(43,94,231,0.7);
+}
+#last-download svg {
+    height: 15px;
+    margin-top: 2px;
+    vertical-align: text-top;
+}
 
 
 /* +++ debug +++ */
