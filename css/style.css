@@ -23,12 +23,19 @@ a {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     transition-duration: 0.2s;
 }
+p {
+    font-size: 17px;
+    line-height: 25px;
+}
 
 
 /* header */
 
 
 header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
     background-color: rgb(43,94,231);
     padding-top: 5px;
 }
@@ -83,6 +90,10 @@ header .header-row {
 /* main */
 
 
+main {
+    padding-top: 60px;
+}
+
 /* jumbotron */
 
 main .jumbotron {
@@ -105,10 +116,6 @@ main .jumbotron {
 .jumbotron .jumbo-content h1 {
     font-size: 45px;
     margin-bottom: 35px;
-}
-.jumbotron .jumbo-content p {
-    font-size: 17px;
-    line-height: 27px;
 }
 .jumbotron .jumbo-content .jumbo-btns a {
     display: inline-block;
@@ -139,7 +146,28 @@ main .jumbotron {
 
 /* main content */
 
-
+section {
+    padding-top: 100px;
+    width: 100%;
+}
+.section-img, .section-text {
+    float: left;
+}
+.section-img {
+    width: 60%;
+}
+.section-img img {
+    width: 100%;
+}
+.section-text {
+    width: 40%;
+    padding-top: 35px;
+    padding-left: 70px;
+}
+.section-text h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
 
 
 /* +++ debug +++ */
@@ -157,14 +185,17 @@ main .jumbotron {
     background-color: green;
     height: 100%;
 } */
-.debug section {
+/* .debug section {
     margin-top: 150px;
-    height: 800px;
+    height: 500px;
     background-color: grey;
     width: 100%;
 }
 .debug .section-img {
-    width: 60%;
     height: 100%;
     background-color: skyblue;
 }
+.debug .section-text {
+    height: 100%;
+    background-color: lightyellow;
+} */
